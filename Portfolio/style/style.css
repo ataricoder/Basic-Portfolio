@@ -12,7 +12,7 @@ h3 {
   font-family: "adineue-bold";
   font-size: 32px;
   margin-top: -50px;
-  margin-right: -113px;
+  margin-right: 0px;
 }
 h4 {
   font-family: "HUGEAvantGardeBold";
@@ -107,19 +107,17 @@ body {
 }
 @font-face {
 	font-family:'HUGEAvantGardeBold'; 
-	src: url("style/fonts/HUGE/huge_agb_v5-webfont.eot?");
-	src: url("style/fonts/HUGE/huge_agb_v5-webfont.eot?#iefix") format("embedded-opentype"),
-		 url("style/fonts/HUGE/huge_agb_v5-webfont.woff") format("woff"),
-		 url("style/fonts/HUGE/huge_agb_v5-webfont.ttf") format("truetype"),
-		 url("style/fonts/HUGE/huge_agb_v5-webfont.svg#svgFontName") format("svg")
+	src: url("fonts/HUGE/huge_agb_v5-webfont.eot?");
+	src: url("fonts/HUGE/huge_agb_v5-webfont.eot?#iefix") format("embedded-opentype"),
+		 url("fonts/HUGE/huge_agb_v5-webfont.svg#svgFontName") format("svg")
 }
 @font-face {
 	font-family:'adineue-bold'; 
-	src: url("style/fonts/ADINEUE/adineue-bold-webfont.eot?");
-	src: url("style/fonts/ADINEUE/adineue-bold-webfont.eot?#iefix") format("embedded-opentype"),
-		 url("style/fonts/ADINEUE/adineue-bold-webfont.woff") format("woff"),
-		 url("style/fonts/ADINEUE/adineue-bold-webfont.ttf") format("truetype"),
-		 url("style/fonts/ADINEUE/adineue-bold-webfont.svg#svgFontName") format("svg")
+	src: url("fonts/ADINEUE/adineue-bold-webfont.eot?");
+	src: url("fonts/ADINEUE/adineue-bold-webfont.eot?#iefix") format("embedded-opentype"),
+		 url("fonts/ADINEUE/adineue-bold-webfont.woff") format("woff"),
+		 url("fonts/ADINEUE/adineue-bold-webfont.ttf") format("truetype"),
+		 url("fonts/ADINEUE/adineue-bold-webfont.svg#svgFontName") format("svg")
 }
 a:link, a:visited {
   text-decoration: none;
@@ -211,8 +209,9 @@ ul.mosaic li.image a figure img, ul.mosaic li.video a figure img {
   width: auto;
   height: 100%;
   position: absolute;
+  text-align: center;
   top: 0;
-  left: 0;
+  left: -60px;
   opacity: 1;
   transition: all 0.4s;
   transform: scale(1.05);
@@ -244,8 +243,10 @@ ul.mosaic li.image a figure:hover figcaption, ul.mosaic li.video a figure:hover 
   background: #a7a9ac;
   transform: scale(1);
 }
+
 /* For viewing in devices n that stuff, will implement after grading
 @media screen and (min-width: 2048px) {
+  .
   .container {
     grid-template-columns: 1fr 14fr 1fr;
   }
@@ -257,11 +258,8 @@ ul.mosaic li.image a figure:hover figcaption, ul.mosaic li.video a figure:hover 
     font-size: 36px;
   }
 }
-@media screen and (min-width: 800px) and (max-width: 1079px) {
-  ul.mosaic li.tile {
-    width: 33%;
-  }
-}
+
+
 @media screen and (min-width: 670px) and (max-width: 799px) {
   ul.mosaic li.tile {
     width: 33%;
